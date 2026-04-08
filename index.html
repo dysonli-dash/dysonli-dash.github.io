@@ -1,4 +1,22 @@
-<script type="text/javascript" src="https://highlighter.dash.com.au/Public/sessioncookiescript?o=https://highlighter.dash.com.au"></script>
+<script type="text/javascript">
+var originMatchUrl = 'https://highlighter.dash.com.au';
+var redirectToUrl = 'https://highlighter.dash.com.au/Public/SessionCookie';
+
+window.addEventListener('message', receiveMessage, false);
+
+function receiveMessage(event) {
+    // For older Chrome versions, the origin property is in the event.originalEvent object.
+    var origin = event.origin || event.originalEvent.origin;
+    if (origin !== originMatchUrl) {
+        alert('return');
+    }
+
+    var currentUrl = window.location.href;
+    var go = redirectToUrl + '?target=' + encodeURIComponent(currentUrl);
+
+    alert(go);
+}
+</script>
 
 <h1>Test</h1>
 

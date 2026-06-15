@@ -1,64 +1,7 @@
+<!-- DASH Enquiry Form -->
+<div id="dash-enquiry-form"></div>
 <script
-  type="text/javascript"
-  src="https://highlighter.dash.com.au/Public/sessioncookiescript?o=https://highlighter.dash.com.au"></script>
-
-<!-- <script type="text/javascript">
-var originMatchUrl = 'https://highlighter.dash.com.au';
-var redirectToUrl = 'https://highlighter.dash.com.au/Public/SessionCookie';
-
-window.addEventListener('message', receiveMessage, false);
-
-function receiveMessage(event) {
-    // For older Chrome versions, the origin property is in the event.originalEvent object.
-    var origin = event.origin || event.originalEvent.origin;
-    if (origin !== originMatchUrl) {
-        alert('return');
-    }
-
-    var currentUrl = window.location.href;
-    var go = redirectToUrl + '?target=' + encodeURIComponent(currentUrl);
-
-    alert(go);
-}
-</script>
-
-<script type="text/javascript">
-    window.addEventListener('message', function(event) {
-        console.log('origin: ' + event.origin + '\ndata: ' + JSON.stringify(event.data));
-    }, false);
-</script> -->
-
-<style>
-  /* Change the container background */
-  #hlg-open-form-container {
-    background: #fff;
-  }
-
-  /* Customise the card */
-  #hlg-open-form-card {
-    max-width: 400px;
-    border-radius: 8px;
-  }
-
-  /* Change the message text colour and font size */
-  #hlg-open-form-msg {
-    color: #333;
-    font-size: 14px;
-  }
-
-  /* Hide the message text entirely */
-  #hlg-open-form-msg {
-    display: none;
-  }
-
-  /* Customise the button appearance */
-  #hlg-open-form-btn {
-    background-color: #e91e63 !important;
-    border-radius: 24px !important;
-    font-size: 18px !important;
-  }
-</style>
-
-<h1>Test</h1>
-
-<iframe style="width: 500px; height: 300px;" allow="storage-access" src="https://highlighter-uat.dash.com.au/Public/Start?guid=ef7f3d48-63e6-46e0-a05a-e281463e499b"></iframe>
+  src="https://enquiries-uat.dash.com.au/v1.0/embed.js"
+  data-group-key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkYXNoLWVucXVpcmllcyIsImdpZCI6IjhhOWIxODY0LTM0MDgtNDdkMC0wMjQ2LTA4ZDg4NzYwNGMzNCJ9.IsMKSqFgQxoTTX_vkeCKuqmBuCG9mmQ9y4AZPw0F43Q"
+  data-target="#dash-enquiry-form"
+  async></script>
